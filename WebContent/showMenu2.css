@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+				* {パディング：0px;
+									マージン：0px;}
+				本体{背景：薄黄色;
+									text-align：center;}
+				テーブル{マージン：自動;
+									フォントサイズ：12pt;
+									text-align：left;}
+				tr＃type {font-weight：bold;
+									色：ダークグリーン;
+									高さ：3em;
+									vertical-align：bottom;}
+				td＃type {幅：500px;}
+				td＃menu {padding-left：2em;
+									幅：350px;
+									パディングトップ：3px;
+									パディング-下：2px;
+									border-bottom：点線のDarkGreen 2px;}
+				td＃price {text-align：right;
+									フォントスタイル：斜体;
+									font-weight：太字;
+									フォントサイズ：14pt;
+									幅：100px;
+									border-bottom：点線のDarkGreen 2px;
+									色：DarkOliveGreen;
+									パディング-右：20px;}
+				td＃subMenu {text-indent：2em;}
+				div＃type {背景：ピンク;
+									パディング：5px}
+				div.menu {幅：300px;
+									カーソル：ポインタ;
+									フォントサイズ：13pt;
+									色：DarkOliveGreen;}
+				div.menu-no-detail {幅：300px;
+									フォントサイズ：13pt;
+									色：DarkOliveGreen;}
+				div.exp {表示：なし;
+									幅：300px;
+									パディング-左：1.5em;
+									フォントサイズ：10pt;
+									色：オーキッド;}
+				span＃link {margin-left：50px;
+									フォントサイズ：12pt;
+									テキスト装飾：下線;
+									色：RoyalBlue;
+									カーソル：ポインタ;}
+				span＃price {margin-left：100px;}
+				td＃title {フォントサイズ：18pt;
+									色：ダークグリーン;
+									font-weight：bold;}
+				#courseMenu {幅：400px;
+									垂直整列：上;
+									背景：ピンク;
+									色：DarkGreen;}
+				td＃coursePrice {text-align：right;
+									フォントスタイル：斜体;
+									font-weight：太字;
+									フォントサイズ：14pt;
+									幅：100px;
+									色：DarkOliveGreen;
+									パディング-右：20px;
+									背景：ピンク;}
+				div＃subMenu {font-size：10pt：color：DarkGreen;}
+				div＃courseDetail {幅：300px;
+									パディング-左：1.5em;
+									フォントサイズ：10pt;
+									色：オーキッド;}

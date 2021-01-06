@@ -1,0 +1,324 @@
+@charset "UTF-8";
+
+
+h2 {
+	/* =======文字(Menu)のフォント========*/
+	font-style: italic;
+	font-family: Times New Roman, "メイリオ";
+	text-align: center;
+	color: #ECFFF3;
+}
+
+table#main {
+	background-image: url(./img/kuromoku.jpg);
+	border: 0.1px white solid; /* 太さpxで白色の実線 */
+	background-color: #486d46; /* 背景色 */
+	background-size: cover; /* 全画面 */
+	background-attachment: fixed; /* 固定 */
+	background-position: center ; /* 縦横中央 */
+	float: left;
+}
+
+table#mokuzi {
+	background-image: url(./img/kuromoku.jpg);
+	border: 0.1px white solid; /* 太さpxで白色の実線 */
+	background-color: #486d46; /* 背景色 */
+	background-size: cover; /* 全画面 */
+	width: 180px;
+	height: 220px;
+	border-collapse: collapse; /* 重ねて表示    */
+	float: left;
+}
+
+th#right {
+	border: 1px white solid; /* 太さpxで白色の実線 */
+}
+
+
+
+th#auto {
+	border: 3px solid #333;
+}
+
+td#center{
+	text-align: center;
+	margin: 0 auto;
+	display:block;
+	float:none;
+	width:600px;
+}
+
+.cen{
+	width:680px;
+	margin: 0 auto;
+}
+
+
+.cp_menu {
+	max-width: 360px;
+	margin: 0 auto;
+	padding: 0;
+	width: 320px;
+	/* ============追尾の機能============	*/
+	position: fixed;
+	top: 140px;
+	right: 20px;
+	z-index: 100;
+	border-collapse: collapse;
+	width: 225px;
+}
+
+.cp_menu a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: #000000;
+	line-height: 1;
+}
+
+.cp_menu label {
+	display: block;
+	position: relative;
+	margin: 0 0 2px 0;
+	padding: 12px;
+	line-height: 1;
+	color: #ffffff;
+  background: rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+
+.cp_menu label::before {
+	position: absolute;
+	content: '▼';
+	color: #ffffff;
+	right: 0.5em;
+	top: 25%;
+}
+
+.cp_menu input {
+	display: none;
+}
+
+.cp_menu ul {
+	margin: 0;
+	padding: 0;
+  background: rgba(255,255,255,0.7);
+	list-style: none;
+
+}
+
+.cp_menu li {
+	overflow-y: hidden;
+	max-height: 0;
+	transition: all 0.5s;
+
+}
+#cp_menu ul:hover {
+}
+/*=========リストが増えたらULごとに追加をする必要有り========*/
+#cp_menu_bar1:checked ~ #link1 li, #cp_menu_bar2:checked ~ #link2 li,
+	#cp_menu_bar3:checked ~ #link3 li {
+	max-height: 46px;
+	opacity: 1;
+}
+
+div#fake1 {
+	float: left;
+	opacity: 0;
+	width: 150px;
+	height: 200px
+}
+
+div#fake2 {
+	float: left;
+	opacity: 0;
+	width: 50px;
+	height: 200px
+}
+
+div#fake3 {
+	float: left;
+	opacity: 0;
+	width: 380px;
+	height: 200px
+}
+div#Olive{
+	color: DarkOliveGreen;
+}
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.center {
+	text-align: center;
+}
+
+p {
+	color: white;
+}
+
+caption {
+	font-size: 18pt;
+	color: #228B22;
+}
+
+tr#data0 {
+	background: #E3FFE3;
+}
+
+tr#data1 {
+	background: #A4FFDB;
+}
+
+th#data2 {
+	line-height: 35px
+}
+
+th {
+	color: white;
+}
+
+td#left {
+	text-align: left;
+	vertical-align: top;
+	white-space: nowrap;
+}
+
+td#outer {
+	padding: 10px;
+}
+
+td#left {
+	text-align: left;
+}
+
+td#right {
+	text-align: right;
+}
+
+#code {
+	width: 40px;
+	text-align: center;
+}
+
+td#c_menu {
+	width: 250px;
+}
+
+td#c_price {
+	width: 60px;
+	text-align: center;
+	padding-right: 5px;
+}
+
+#comm {
+	width: 400px;
+}
+
+#ord {
+	width: 100px;
+	text-align: center;
+}
+
+#btn {
+	width: 100px;
+}
+
+div#type1 {
+	width: 150px;
+	border: solid gray 1px;
+	background: #E3FFE3;
+	color: #007B53;
+	padding: 2px;
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+div#type2 {
+	width: 150px;
+	border: solid gray 1px;
+	background: #007B53;
+	color: #E3FFE3;
+	padding: 2px;
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+div#area1 {
+	font-size: 20px;
+}
+
+
+
+body {
+	background-color: #486d46; /* 背景色 */
+	background-image: url(./img/dwback.jpg); /* 画像 */
+	background-size: cover; /* 全画面 */
+	background-attachment: fixed; /* 固定 */
+	background-position: center center; /* 縦横中央 */
+}
+
+.float {
+	list-style: none;
+	overflow: hidden;
+}
+
+.float li {
+	float: left;
+	width: 140px;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	margin-right: 2px;
+}
+
+.float li a {
+	text-decoration: none;
+	font-weight: bold;
+	padding: 20px;
+	color: white;
+}
+
+/* ===================四角の囲い  */
+.box1 {
+	padding: 0.5em 1em;
+	margin: 2em 0;
+	font-weight: bold;
+	border: solid 1px #000000;
+	border-color: white;
+}
+
+.box1 p {
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+.box2 {
+	padding: 0.5em 1em;
+	margin: 2em 0;
+	font-weight: bold;
+	border: solid 1px #000000;
+	border-color: white;
+}
+
+.box2 p {
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+header {
+	padding: auto;
+}
+
+/* =======================TOP背景画像  */
+body {
+	background-image: url(./img/yann-allegre-E-1LUGhTkzo-unsplash.jpg);
+	background-size: cover;
+	;
+}
+
+}

@@ -1,0 +1,541 @@
+@charset "UTF-8";
+
+
+/* =======================TOP背景画像  */
+
+body{background-image:url(./img/yann-allegre-E-1LUGhTkzo-unsplash.jpg);background-size:cover;
+;}
+
+
+/* =====================video透かし  */
+video {
+    opacity: 0.9;
+}
+/* =====================navタグでナビゲーション  */
+                nav ul{
+            display: table;
+            margin: 0 auto;
+            padding: 0 ;
+            width: 80%;
+                text-align: center;
+                font-size:;
+                }
+            nav li{
+                display: table-cell;
+                    min-width: 50px;
+                }
+            nav a{
+                display: block;
+                width: 100%;
+                text-decoration: none;
+                color: #FFFFFF;
+                padding-bottom: 5px;
+            }
+                nav li.current{
+                    border-bottom: 3px solid #92D050;
+                }
+
+                nav div:hover{
+                    color: #E7DA66;
+                    border-bottom: 3px solid #F0E475;
+                }
+
+
+/*ヘッダーボタン*/
+.buttons-coll {
+  width: 90%;
+  margin:3 auto;
+  text-align: center;
+  text-color: #FFFAF0
+
+}
+button {
+  margin: 20px;
+}
+.custom-btn {
+  padding: 5px 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+.btn-2 {
+  border: none;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+.btn-2:before,
+.btn-2:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+.btn-2:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-2:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-2:hover:before {
+  height: 100%;
+}
+.btn-2:hover:after {
+  width: 100%;
+}
+
+
+
+/* ==============aタグのリンクのカラー とフォント */
+
+        a:link{
+                   color:#FFFAF0;
+                   font-family: 'M PLUS 1p', sans-serif,"Roboto", sans-serif;
+                }
+
+                a:visited {
+                 color: #FFFAF0;
+                font-family: 'M PLUS 1p', sans-serif,"Roboto", sans-serif;
+                }
+                a:hover {
+                     color: red;
+                     font-family: 'M PLUS 1p', sans-serif,"Roboto", sans-serif;
+                }
+                a:active {
+                 color: green;
+                font-family: 'M PLUS 1p', sans-serif,"Roboto", sans-serif;
+                    }
+
+
+
+
+  .ex4 .parent {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+
+
+
+
+ /* ===================小さめの画像の上からスライド  */
+ /* 画像の表示エリア  */
+.slide {
+  position   : relative;
+  overflow   : hidden;
+                    /* 画像のサイズに合わせて変更 */
+  width      : 400px;
+  height     : 300px;
+  margin     : auto;
+
+}
+
+ /* 画像の設定*/
+.slide img {
+  display    : block;
+  position   : absolute;
+                      /* 画像のサイズを表示エリアに合せる */
+  width      : inherit;
+  height     : inherit;
+  top        : -100%;
+  animation  : slideAnime 6s ease infinite;
+}
+
+ /*スライドのアニメーションを段差で開始する */
+.slide img:nth-of-type(1) { animation-delay: 0s }
+.slide img:nth-of-type(2) { animation-delay: 3s }
+
+ /*スライドのアニメーション  */
+@keyframes slideAnime{
+   0% { top: -100% }
+   5% { top: 0     }
+  45% { top: 0     }
+  50% { top: 100%  }
+ 100% { top: 100%  }
+}
+</style>
+
+
+
+
+
+
+  /* =========== 使ってない（動画やめたらこれ*/
+
+  div.slide-show {
+    width: 640px; /* スライドショーの幅 */
+    max-width: 100%; /* スマホで表示が欠けないように */
+    margin: 10px auto; /* 中央揃え */
+    position: relative;
+}
+
+.slide-show img {
+    animation: show 12s infinite; /* 12秒のスライドショーを繰り返し */
+    max-width: 100%;
+    height: auto;
+    opacity: 0;
+    position: absolute; /* 画像を重ねて表示 */
+    left: 0;
+    top: 0;
+}
+
+@keyframes show {
+    0% {opacity: 0}
+    17% {opacity: 1}
+    33% {opacity: 1}
+    50% {opacity: 0}
+}
+
+.slide-show img:nth-of-type(1) {
+    position: relative;
+}
+
+.slide-show img:nth-of-type(2) {
+    animation-delay: 0s;
+}
+
+.slide-show img:nth-of-type(3) {
+    animation-delay: 4s;
+}
+
+.slide-show img:nth-of-type(4) {
+    animation-delay: 8s;
+}
+
+
+
+/*========ページTOPに戻る*/
+
+
+.pagetop{
+    display: none;
+    position: fixed;
+    right: 15px;
+    bottom: 60px;
+}
+.pagetop a{
+    display: block;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: #e8decf;
+    border-radius: 50%;
+    line-height: 50px;
+}
+.pagetop a i{
+    font-size: 20px;
+    color:#000000;
+    line-height: 50px;
+}
+
+
+
+
+
+
+/*========================================*/
+
+/*==================スタイル*/
+body {
+  display: auto;
+  height: auto;
+
+}
+
+// etc
+
+header {
+  padding: auto;
+}
+
+main {
+      padding: auto;
+
+}
+middle{
+    padding: auto;
+}
+
+footer {
+  padding:auto;
+}
+
+body {
+ padding: auto;
+}
+
+
+
+
+
+/*==================まんなかにする*/
+.center{
+  text-align: center;
+}
+/*==================左にする*/
+.left{
+  text-align: left;
+}
+
+/*==================右にする*/
+.right{
+  text-align: right;
+}
+
+/*==================先頭の文字を大きく色薄いピンク*/
+/*--- サンプル表示の枠 -- */
+.firstStr {
+  display      : inline-block;
+  width        : ;              /* 枠のサイズ   */
+  background   : ;            /* 背景色       */
+  border       : ;     /* 枠線         */
+  font-size    : ;               /* 文字のサイズ */
+  text-align   : left;               /* 文字位置     */
+  padding      : ;                /* 枠の余白     */
+  line-height  : ;                /* 1行の高さ    */
+  font-family: 'M PLUS 1p', sans-serif;
+}
+ /*--- 先頭文字の定義 -- */
+.firstStr:first-letter {
+  font-size    : 2em;                /* 文字サイズ   */
+  padding      : 0px;                /* 余白         */
+  color        : #DF907C;            /* 文字の色     */
+  float        : left;               /* 2文字目の位置合わせ */
+  font-weight: 900;  /*太さ*/
+}
+
+/*==================先頭の文字を大きく文字色そのまま*/
+/*--- サンプル表示の枠 -- */
+.firstStr2 {
+  display      : inline-block;
+  width        : ;              /* 枠のサイズ   */
+  background   : ;            /* 背景色       */
+  border       : ;     /* 枠線         */
+  font-size    : ;              /* 文字のサイズ */
+  text-align   : right;               /* 文字位置     */
+  padding      : ;                /* 枠の余白     */
+  line-height  : ;                /* 1行の高さ    */
+  font-family: 'M PLUS 1p', sans-serif;
+}
+ /*--- 先頭文字の定義 -- */
+.firstStr2:first-letter {
+  font-size    : 2em;                /* 文字サイズ   */
+  padding      : 0px;                /* 余白         */
+  color        : ;            /* 文字の色     */
+  float        : ;               /* 2文字目の位置合わせ */
+  font-weight: 900;  /*太さ*/
+}
+
+/* ===================TOP店名フォント  */
+
+          div1{font-family: 'Limelight', cursive;
+                     color:white;  text-align: center;  letter-spacing : ;
+                    }
+
+/* ===================JPフォント  */
+.jpReview{
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+
+/* =====================navタグでナビゲーション  */
+                nav ul{
+            display: table;
+            margin: 0 auto;
+            padding: 0 ;
+            width: 80%;
+                text-align: center;
+                font-size:;
+                }
+            nav li{
+                display: table-cell;
+                    min-width: 50px;
+                }
+            nav a{
+                display: block;
+                width: 100%;
+                text-decoration: none;
+                color: #FFFFFF;
+                padding-bottom: 5px;
+            }
+                nav li.current{
+                    border-bottom: 3px solid #92D050;
+                }
+
+                nav div:hover{
+                    color: #ECD070;
+                    border-bottom: 3px solid #F0E475;
+                }
+
+
+                /*ヘッダーボタン*/
+.buttons-coll {
+  width: 90%;
+  margin:3 auto;
+  text-align: center;
+  text-color: #FFFAF0;
+}
+button {
+  margin: 20px;
+}
+.custom-btn {
+  padding: 5px 40px;
+  font-family: "Roboto", sans-serif;
+  font-size:20px;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+.btn-2 {
+  border: none;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+.btn-2:before,
+.btn-2:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+.btn-2:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-2:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-2:hover:before {
+  height: 100%;
+}
+.btn-2:hover:after {
+  width: 100%;
+}
+
+/* ==============aタグのリンクのカラー とフォント */
+
+        a:link{
+                   color:#83BAD6;
+                   font-family: 'M PLUS 1p', sans-serif,"Roboto", sans-serif;
+                }
+
+                a:visited {
+                 color: #83BAD6;
+                font-family: 'M PLUS 1p', sans-serif,"Roboto", sans-serif;
+                }
+                a:hover {
+                     color: #DF907C;
+                     font-family: 'M PLUS 1p', sans-serif,"Roboto", sans-serif;
+                }
+                a:active {
+                 color: #4DADA1;
+                font-family: 'M PLUS 1p', sans-serif,"Roboto", sans-serif;
+                    }
+
+
+
+ /* ===================小さめの画像の上からスライド  */
+ /* 画像の表示エリア  */
+.slide {
+  position   : relative;
+  overflow   : hidden;
+                    /* 画像のサイズに合わせて変更 */
+  width      : 400px;
+  height     : 300px;
+  margin     : auto;
+
+}
+
+ /* 画像の設定*/
+.slide img {
+  display    : block;
+  position   : absolute;
+                      /* 画像のサイズを表示エリアに合せる */
+  width      : inherit;
+  height     : inherit;
+  right        : -100%;
+  animation  : slideAnime 6s ease infinite;
+}
+
+ /*スライドのアニメーションを段差で開始する */
+.slide img:nth-of-type(1) { animation-delay: 0s }
+.slide img:nth-of-type(2) { animation-delay: 3s }
+
+ /*スライドのアニメーション  */
+@keyframes slideAnime{
+   0% { right: -100% }
+   5% { right: 0     }
+  45% { right: 0     }
+  50% { right: 100%  }
+ 100% { right: 100%  }
+}
+
+/**/
+
+.fade-in01{
+          opacity:1;
+           animation-name: sample01;
+               animation-duration: 3s;
+            animation-iteration-count:infinite;
+            animation-fill-mode: forwards;
+            }
+        @keyframes sample01 {
+        0% {
+         opacity:0.3;
+         }
+            }
+            70%{
+        opacity: 0.7;
+        }
+            80%{
+        opacity: 0.5;
+        }
+        90% {
+         opacity: 0.3;
+        }
+         100% {
+         opacity: 0.1;
+        }
+            }
+
+
+
+
+
+/*========ページTOPに戻る*/
+.pagetop{
+    display: none;
+    position: fixed;
+    right: 15px;
+    bottom: 60px;
+}
+.pagetop a{
+    display: block;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: #e8decf;
+    border-radius: 50%;
+    line-height: 50px;
+}
+.pagetop a i{
+    font-size: 20px;
+    color:#000000;
+    line-height: 50px;
+}
